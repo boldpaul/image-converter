@@ -1,24 +1,37 @@
+Metadata-Version: 2.4
+Name: image-converter
+Version: 1.0.0
+Summary: Convert PNG and JPEG images to AVIF format
+Home-page: https://github.com/yourusername/image-converter
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/image-converter
+Project-URL: Repository, https://github.com/yourusername/image-converter
+Keywords: image,converter,avif,png,jpeg,compression
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow>=10.0.0
+Requires-Dist: pillow-avif-plugin>=1.4.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-python
+
 # Image Converter
 
 A fast, parallel CLI tool to convert PNG and JPEG images to AVIF format.
-
-# Project Structure
-
-image-converter/
-├── requirements.txt          # Dependencies (Pillow, pillow-avif-plugin)
-├── pyproject.toml           # Modern Python packaging
-├── setup.py                 # Backwards-compatible setup
-├── README.md                # Documentation
-└── src/image_converter/
-    ├── __main__.py          # Entry point (python -m image_converter)
-    ├── core/
-    │   ├── converter.py     # Core conversion logic
-    │   └── formats.py       # Format definitions
-    ├── cli/
-    │   └── app.py           # CLI with argparse
-    └── utils/
-        ├── batch.py         # ThreadPoolExecutor parallel processing
-        └── logger.py        # Colored logging
 
 ## Features
 

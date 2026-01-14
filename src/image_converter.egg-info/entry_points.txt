@@ -1,0 +1,3 @@
+[console_scripts]
+image-converter = image_converter.cli.app:main
+img2avif = image_converter.cli.app:main
