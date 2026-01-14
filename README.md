@@ -55,7 +55,24 @@ pip install -r requirements.txt
 
 ### Basic Usage
 
+# Activate the virtual environment
 ```bash
+source .venv/bin/activate
+```
+# Basic usage
+```bash
+image-converter photo.png                     # Single file
+image-converter photos/                       # Entire folder
+image-converter *.jpg -o output/ -q 90       # Custom output + quality
+```
+# Parallel processing (8 workers)
+```bash
+image-converter images/ -p 8 -q 85 --overwrite
+```
+# With logging
+```bash
+image-converter photos/ -v --log-file conversion.log
+
 # Convert a single file
 image-converter photo.png
 
